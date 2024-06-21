@@ -8,6 +8,18 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/hku_icon.jpeg">
+
+  <script type="text/javascript">
+
+    function display(id) {
+      var traget = document.getElementById(id);
+      if (traget.style.display == "none") {
+        traget.style.display = "";
+      } else {
+        traget.style.display = "none";
+      }
+    }  
+  </script>
 </head>
 
 <body>
@@ -25,7 +37,7 @@
               </p>
               <p> I received my Bachelor and Master degree from <a href="https://www.nju.edu.cn/">Nanjing University</a> in 2020 and 2023 respectively, fortunately supervised by Prof. <a href="https://cs.nju.edu.cn/shiyh/index.htm">Yinghuan Shi</a>.
               </p>
-              <p> My current research mainly focuses on robust zero-shot perception, generative perception, and label-efficient learning.
+              <p> My current research focuses on vision foundation model and vision-language model. Previously, I worked on how to learn from cheap visual data.
               </p>
               <p style="text-align:center">
                 <a href="mailto:lihe.yang.cs@gmail.com">Email</a> &nbsp/&nbsp
@@ -42,36 +54,20 @@
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
-            <p>
-              <strong>2024-02:</strong> <a href="https://depth-anything.github.io/">Depth Anything</a> is accepted by <em>CVPR</em> 2024.
-            </p>
-            <p>
-              <strong>2023-12:</strong> I am awarded the <em>NeurIPS</em> 2023 Outstanding Reviewer.
-            </p>
-            <p>
-              <strong>2023-09:</strong> One paper on generative perception is accepted by <em>NeurIPS</em> 2023.
-            </p>
-            <p>
-              <strong>2023-09:</strong> I start at HKU as a PhD student.
-            </p>
-            <p>
-              <strong>2023-07:</strong> Two papers on semi-supervised learning and semantic segmentation are accepted by <em>ICCV</em> 2023.
-            </p>
-	          <p>
-              <strong>2023-02:</strong> Two papers on semi-supervised semantic segmentation are accepted by <em>CVPR</em> 2023.
-            </p>
-            <p>
-              <strong>2023-02:</strong> I am awarded the HKU Presidential PhD Scholarship.
-            </p>
-            <p>
-              <strong>2022-03:</strong> One paper on semi-supervised semantic segmentation is accepted by <em>CVPR</em> 2022.
-            </p>
-            <p>
-              <strong>2021-10:</strong> I am awarded the National Scholarship.
-            </p>
-            <p>
-              <strong>2021-07:</strong> One paper on few-shot segmentation is accepted by <em>ICCV</em> 2021 as an Oral presentation.
-            </p>
+            <p> <strong>2024-06:</strong> <a href="https://depth-anything-v2.github.io/">Depth Anything V2</a> is released. </p>
+            <p> <strong>2024-02:</strong> <a href="https://depth-anything.github.io/">Depth Anything</a> is accepted by <em>CVPR</em> 2024. </p>
+            <p> <strong>2023-12:</strong> I am awarded the <em>NeurIPS</em> 2023 Top Reviewer. </p>
+            <p> <strong>2023-09:</strong> One paper on generative perception is accepted by <em>NeurIPS</em> 2023. </p>
+            <p> <strong>2023-09:</strong> I start at HKU as a PhD student.</p>
+            <p> <strong>2023-07:</strong> Two papers on semi-supervised learning and semantic segmentation are accepted by <em>ICCV</em> 2023. </p>
+	          <p> <strong>2023-02:</strong> Two papers on semi-supervised semantic segmentation are accepted by <em>CVPR</em> 2023. </p>
+            <p> <strong>2023-02:</strong> I am awarded the HKU Presidential PhD Scholarship. </p>
+            <a onclick="return display('old_news');"> ---- show more ----</a>
+            <div id="old_news" style="display: none;">
+              <p> <strong>2022-03:</strong> One paper on semi-supervised semantic segmentation is accepted by <em>CVPR</em> 2022. </p>
+              <p> <strong>2021-10:</strong> I am awarded the National Scholarship. </p>
+              <p> <strong>2021-07:</strong> One paper on few-shot segmentation is accepted by <em>ICCV</em> 2021 as an Oral presentation. </p>
+            </div>
             
           </td>
         </tr>
@@ -80,16 +76,31 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Publications</heading>
-            <p>
-            </p>
+            <heading>Selected Publications</heading>
           </td>
         </tr>
       </tbody></table>
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
           <td style="padding:20px;width:30%;vertical-align:middle">
-            <!-- <img src='images/depth_anything.jpeg' alt="game" width="180" style="border-style: none"> -->
+            <video muted autoplay="autoplay" loop="loop" src="images/depth_anything_v2.mov" width="180" style="border-style: none"></video>
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2406.09414">
+              <papertitle>Depth Anything V2</papertitle>
+            </a>
+            <br>
+            <strong>Lihe Yang</strong>, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng, Hengshuang Zhao
+            <br>
+            <em>Preprint</em>, 2024
+            <br>
+            <a href="https://depth-anything-v2.github.io">Project page</a> / <a href="https://arxiv.org/abs/2406.09414">Paper</a> /
+            <a href="https://github.com/DepthAnything/Depth-Anything-V2">Code</a> / <a href="https://huggingface.co/spaces/depth-anything/Depth-Anything-V2">Demo</a> / <a href="https://x.com/_akhaliq/status/1801432403665125738">Media</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px;width:30%;vertical-align:middle">
             <video muted autoplay="autoplay" loop="loop" src="images/depth_anything.mp4" width="180" style="border-style: none"></video>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
@@ -144,7 +155,7 @@
           </td>
         </tr>
 
-        <tr>
+        <!-- <tr>
           <td style="padding:20px;width:30%;vertical-align:middle">
             <img src='images/diverse_cotraining.png' alt="game" width="180" style="border-style: none">
           </td>
@@ -160,7 +171,7 @@
             <a href="https://arxiv.org/abs/2308.09281">Paper</a> /
             <a href="https://github.com/williamium3000/diverse-cotraining">Code</a>
           </td>
-        </tr>
+        </tr> -->
 
         <tr>
           <td style="padding:20px;width:30%;vertical-align:middle">
@@ -181,7 +192,7 @@
           </td>
         </tr>
 
-        <tr>
+        <!-- <tr>
           <td style="padding:20px;width:30%;vertical-align:middle">
             <img src='images/augseg.png' alt="game" width="180" style="border-style: none">
           </td>
@@ -197,7 +208,7 @@
             <a href="https://arxiv.org/abs/2212.04976">Paper</a> /
             <a href="https://github.com/ZhenZHAO/AugSeg">Code</a>
           </td>
-        </tr>
+        </tr> -->
 
         <tr>
           <td style="padding:20px;width:30%;vertical-align:middle">
@@ -263,7 +274,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Honors</heading>
               <p>
-                <b>NeurIPS Outstanding Reviewer</b>, NeurIPS, 2023
+                <b>NeurIPS Top Reviewer</b>, NeurIPS, 2023
               </p>
               <p>
                 <b>HKU Presidential PhD Scholarship</b>, The University of Hong Kong, 2023-2027
@@ -292,28 +303,13 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Academic Services</heading>
               <p>
-                <strong>Conference Reviewer</strong>
+                Conference reviewer: CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, etc.
               </p>
-              <ul>
-                <li> IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022-2024</li>
-                <li> IEEE International Conference on Computer Vision (<b>ICCV</b>), 2023</li>
-                <li> European Conference on Computer Vision (<b>ECCV</b>), 2022</li>
-                <li> Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023</li>
-                <li> International Conference on Learning Representations (<b>ICLR</b>), 2023-2024</li>
-                <li> International Conference on Machine Learning (<b>ICML</b>), 2024</li>
-                <li> AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2024</li>
-                <li> International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2024</li>
-              </ul>
-              
+
               <p>
-                <strong>Journal Reviewer</strong>
+                Journal reviewer: TIP, TNNLS, TCSVT, TGRS, etc.
               </p>
-              <ul>
-                <li> IEEE Transactions on Image Processing (<b>TIP</b>)</li>
-                <li> IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>)</li>
-                <li> IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>)</li>
-                <li> IEEE Transactions on Geoscience and Remote Sensing (<b>TGRS</b>)</li>
-              </ul>
+              
             </td>
           </tr>
         </tbody></table>
