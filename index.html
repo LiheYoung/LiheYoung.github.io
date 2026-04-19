@@ -9,14 +9,19 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/hku_icon.jpeg">
 
+  <style type="text/css">
+    .news-list { padding-left: 1.2em; margin-left: 0; }
+    .news-list li { margin-bottom: 0.6em; }
+  </style>
+
   <script type="text/javascript">
 
     function display(id) {
-      var traget = document.getElementById(id);
-      if (traget.style.display == "none") {
-        traget.style.display = "";
+      var target = document.getElementById(id);
+      if (target.style.display == "none") {
+        target.style.display = "";
       } else {
-        traget.style.display = "none";
+        target.style.display = "none";
       }
     }  
   </script>
@@ -32,16 +37,15 @@
               <p style="text-align:center">
                 <name>Lihe Yang</name>
               </p>
-              <p> I am a second-year PhD student at 
-                <a href="https://www.hku.hk/">The University of Hong Kong</a>, fortunately supervised by Prof. <a href="https://hszhao.github.io/">Hengshuang Zhao</a>. 
+              <p> I am a PhD student at <a href="https://www.hku.hk/">HKU</a>, advised by Prof. <a href="https://hszhao.github.io/">Hengshuang Zhao</a>. I received Bachelor and Master degrees from <a href="https://www.nju.edu.cn/">NJU</a>, advised by Prof. <a href="https://cs.nju.edu.cn/shiyh/index.htm">Yinghuan Shi</a>.
               </p>
-              <p> I received my Bachelor and Master degree from <a href="https://www.nju.edu.cn/">Nanjing University</a> in 2020 and 2023 respectively, fortunately supervised by Prof. <a href="https://cs.nju.edu.cn/shiyh/index.htm">Yinghuan Shi</a>.
+              <p> Previously, I interned at <a href="https://ai.meta.com/research/">Meta FAIR</a>, <a href="https://seed.bytedance.com/en/">ByteDance Seed</a>, <a href="https://www.shlab.org.cn/ ">Shanghai AI Lab</a>, <a href="https://www.sensetime.com/en">SenseTime</a>, and <a href="https://open.youtu.qq.com/">Tencent Youtu Lab</a>.
               </p>
-              <p> My current research focuses on vision foundation model, vision-language model, and data-centric AI.
+              <p> I am building foundational video models toward sparse, predictive, and physically-grounded visual representations.
               </p>
               <p style="text-align:center">
-                <a href="mailto:lihe.yang.cs@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=QX7xv3UAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="mailto:lihe.yang.cs@gmail.com">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=QX7xv3UAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://github.com/LiheYoung">GitHub</a>
               </p>
             </td>
@@ -54,23 +58,16 @@
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>News</heading>
-            <p> <strong>2025-01:</strong> <a href="https://arxiv.org/abs/2410.10777">UniMatch V2</a> is accepted by TPAMI. </p>
-            <p> <strong>2024-12:</strong> I am awarded the <a href="https://ur.bytedance.com/scholarship">2024 ByteDance Scholarship</a>. </p>
-            <p> <strong>2024-09:</strong> <a href="https://depth-anything.github.io/">Depth Anything</a> is selected as <a href="https://www.paperdigest.org/2024/09/most-influential-cvpr-papers-2024-09/">the 5th most influential paper in CVPR 2024</a>. </p>
-            <p> <strong>2024-09:</strong> <a href="https://depth-anything-v2.github.io/">Depth Anything V2</a> is accepted by NeurIPS 2024 and integrated into <a href="https://developer.apple.com/machine-learning/models">Apple Core ML Models</a>. </p>
-            <p> <strong>2024-02:</strong> <a href="https://depth-anything.github.io/">Depth Anything</a> is accepted by CVPR 2024. </p>
-            <!-- <p> <strong>2023-12:</strong> I am awarded the <em>NeurIPS</em> 2023 Top Reviewer. </p> -->
-            <p> <strong>2023-09:</strong> One paper on generative perception is accepted by NeurIPS 2023. </p>
-            <p> <strong>2023-09:</strong> I start at HKU as a PhD student.</p>
-            <a onclick="return display('old_news');"> ---- show more ----</a>
-            <div id="old_news" style="display: none;">
-            <p> <strong>2023-07:</strong> Two papers on semi-supervised learning and semantic segmentation are accepted by ICCV 2023. </p>
-	          <p> <strong>2023-02:</strong> Two papers on semi-supervised semantic segmentation are accepted by CVPR 2023. </p>
-            <p> <strong>2023-02:</strong> I am awarded the HKU Presidential PhD Scholarship. </p>
-            <p> <strong>2022-03:</strong> One paper on semi-supervised semantic segmentation is accepted by CVPR 2022. </p>
-            <p> <strong>2021-10:</strong> I am awarded the National Scholarship. </p>
-            <p> <strong>2021-07:</strong> One paper on few-shot segmentation is accepted by ICCV 2021 as an Oral presentation. </p>
-            </div>
+            <ul class="news-list">
+              <li><a href="https://github.com/facebookresearch/pixio">Pixio</a> and <a href="https://openreview.net/pdf?id=XeLrfKEOZS">SigLIP-HD</a> are accepted by CVPR 2026 and ICLR 2026, respectively.</li>
+              <li>I am awarded the <a href="https://join.qq.com/scholarship.html">2025 Tencent Project Up Scholarship</a>.</li>
+              <li>I am awarded the <a href="https://www.waicyop.cn/article/15">2025 WAIC Youth Outstanding Paper Award</a>.</li>
+              <li>I am awarded the <a href="https://ur.bytedance.com/scholarship">2024 ByteDance Scholarship</a>.</li>
+              <li><a href="https://github.com/LiheYoung/UniMatch-V2">UniMatch V2</a> is accepted by TPAMI.</li>
+              <li><a href="https://depth-anything-v2.github.io/">Depth Anything V2</a> ranks among <a href="https://www.paperdigest.org/2025/09/most-influential-nips-papers-2025-09/">NeurIPS 2024 top-5 most influential papers</a>.</li>
+              <li><a href="https://depth-anything.github.io/">Depth Anything V1</a> ranks among <a href="https://www.paperdigest.org/2025/03/most-influential-cvpr-papers-2025-03/">CVPR 2024 top-5 most influential papers</a>.</li>
+              <li><a href="https://depth-anything-v2.github.io/">Depth Anything V2</a> is integrated into <a href="https://developer.apple.com/machine-learning/models">Apple Core ML Models</a>.</li>
+            </ul>
             
           </td>
         </tr>
@@ -84,6 +81,42 @@
         </tr>
       </tbody></table>
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:30%;vertical-align:middle">
+            <img src='images/pixio.png' alt="game" width="180" style="border-style: none">
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2512.15715">
+              <papertitle>In Pursuit of Pixel Supervision for Visual Pre-training</papertitle>
+            </a>
+            <br>
+            <strong>Lihe Yang</strong>, Shang-Wen Li, Yang Li, Xinjie Lei, Dong Wang, Abdelrahman Mohamed, Hengshuang Zhao, Hu Xu
+            <br>
+            <em>Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2512.15715">Paper</a> /
+            <a href="https://github.com/facebookresearch/pixio">Code</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:20px;width:30%;vertical-align:middle">
+            <img src='images/siglip_hd.png' alt="game" width="180" style="border-style: none">
+          </td>
+          <td style="padding:20px;width:70%;vertical-align:middle">
+            <a href="https://openreview.net/pdf?id=XeLrfKEOZS">
+              <papertitle>SigLIP-HD by Fine-to-Coarse Supervision</papertitle>
+            </a>
+            <br>
+            <strong>Lihe Yang</strong>, Zhen Zhao, Hengshuang Zhao
+            <br>
+            <em>International Conference on Learning Representations (<b>ICLR</b>)</em>, 2026
+            <br>
+            <a href="https://openreview.net/pdf?id=XeLrfKEOZS">Paper</a> /
+            <a href="https://github.com/LiheYoung/SigLIP-HD">Code</a>
+          </td>
+        </tr>
+
         <tr>
           <td style="padding:20px;width:30%;vertical-align:middle">
             <img src='images/unimatch_v2.png' alt="game" width="180" style="border-style: none">
@@ -238,10 +271,18 @@
 
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
         <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
+          <td style="padding:36px 20px 20px 20px;width:100%;vertical-align:middle">
             <heading>Selected Honors</heading>
             <p>
-              <b>ByteDance Scholarship</b> (15 recipients from China and Singapore), ByteDance, 2024
+              <b>Tencent Project Up Scholarship</b> (15 recipients), Tencent, 2025
+            </p>
+
+            <p>
+              <b>WAIC Youth Outstanding Paper Award</b> (10 recipients), WAIC, 2025
+            </p>
+
+            <p>
+              <b>ByteDance Scholarship</b> (15 recipients), ByteDance, 2024
             </p>
 
             <p>
@@ -249,26 +290,12 @@
             </p>
 
             <p>
-              <b>NeurIPS Top Reviewer</b>, NeurIPS, 2023
-            </p>
-            <p>
               <b>HKU Presidential PhD Scholarship</b>, The University of Hong Kong, 2023-2027
             </p>
-            <!-- <p>
-              <b>Tencent Scholarship</b>, Nanjing University, 2022
-            </p> -->
-            <!-- <p>
-              <b>First Prize Scholarship for Postgraduate Students</b>, Nanjing University, 2020-2022
-            </p> -->
+
             <p>
             <b>National Scholarship</b>, Ministry of Education of P.R. China, 2021
             </p>
-            <!-- <p>
-              <b>First Prize of Excellent Undergraduate Thesis</b>, Nanjing University, 2020
-            </p>
-            <p>
-              <b>MICCAI Undergraduate Student Travel Award</b>, MICCAI, 2019
-            </p> -->
           </td>
         </tr>
       </tbody></table>
@@ -284,7 +311,7 @@
               <b>2nd Place</b>, The 8th CCF BDCI Remote Sensing Image Segmentation, 20,000 RMB Bonus, 2020
             </p>
             <p>
-              <b>2nd Place</b>, Off Road Image Segmentation Challenge, 200,000 Yen Bonus, 2020
+              <b>2nd Place</b>, Off Road Image Segmentation Challenge, 200,000 JPY Bonus, 2020
             </p>
             <p>
               <b>2nd Place</b>, BAAI Ultra-high Resolution EM Images Segmentation, 10,000 RMB Bonus, 2019
@@ -298,11 +325,11 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Academic Services</heading>
             <p>
-              Conference reviewer: CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, etc.
+              Conference reviewer: CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, <em>etc</em>.
             </p>
 
             <p>
-              Journal reviewer: TPAMI, TIP, TNNLS, etc.
+              Journal reviewer: TPAMI, <em>etc</em>.
             </p>
             
           </td>
